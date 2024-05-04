@@ -2,7 +2,6 @@
 import * as z from "zod";
 
 import {RegisterSchema} from "@/schemas"
-import { GiConsoleController } from "react-icons/gi";
 
 export const register = async (values: z.infer<typeof RegisterSchema>)=> {
     const validatedFields = RegisterSchema.safeParse(values)
